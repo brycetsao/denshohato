@@ -1,6 +1,3 @@
-require "./zerojudge"
-require "./greenjudge"
-
 module DenshoHato
   def submit judge, prob, lang, code
     case judge
@@ -12,4 +9,5 @@ module DenshoHato
       raise "Error: Judge Not Supported"
     end
   end
+  module_function :submit
 end
