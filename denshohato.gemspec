@@ -5,7 +5,8 @@ Gem::Specification.new do |s|
     s.summary     = "An online-judge submitter for KiwiJudge"
     s.author      = "Bryce Tsao"
     s.email       = "tsaodingtw@example.com"
-    s.files       = Dir['lib/*.rb']
+    s.files       = Dir["lib/*.rb", "lib/*/*.rb"]
+    s.require_paths = ["lib"]
     s.homepage    = "https://rubygems.org/gems/denshohato"
     s.add_runtime_dependency "mechanize", "~> 2.7", ">= 2.7.4"
 end

@@ -11,3 +11,7 @@ module DenshoHato
   end
   module_function :submit
 end
+
+require 'denshohato/config'
+require 'denshohato/zerojudge'
+require 'denshohato/greenjudge'
