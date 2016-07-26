@@ -1,5 +1,4 @@
 require "mechanize"
-require "time"
 
 module CodeForces
   def self.submit prob, lang, code
@@ -14,7 +13,7 @@ module CodeForces
     agent.get "http://codeforces.com/problemset/submit"
     form.submittedProblemCode = prob
     form.programTypeId = lang
-    form.source = "// " + Time.now.to_s + "\n" + code
+    form.source = "//#{Time.now.to_s} #{code}"
     form.submit
     #get result
     #log out
