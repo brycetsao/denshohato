@@ -13,7 +13,7 @@ module CodeForces
     agent.get "http://codeforces.com/problemset/submit"
     form.submittedProblemCode = prob
     form.programTypeId = lang
-    form.source = "//#{Time.now.to_s} #{code}"
+    form.source = "//#{Time.now.to_s}\n #{code}"
     form.submit
     #get result
     #log out
